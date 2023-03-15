@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hotels</title>
+</head>
+
+<body>
+  <h2>Hotels and Ratings</h2>
+  
+  <table border="1">
+    <th>ID</th>
+    <th>Hotel</th>
+    <th>Rating</th>
+    {% for hotel in hotel_ratings %}
+    <tr>
+      <td> {{hotel.ID}} </td>
+      <td> {{hotel.name}} </td>
+      <td> {{hotel.rating}} </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+
+</html>
